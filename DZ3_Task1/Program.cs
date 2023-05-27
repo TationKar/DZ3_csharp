@@ -8,7 +8,7 @@ Console.Clear();
 Console.Write("Введите целое пятизначное число: ");
 int fiveDigit = int.Parse(Console.ReadLine()!);
 
-if (fiveDigit < 9999 || fiveDigit > 99999)
+if (fiveDigit <= 9999 || fiveDigit > 99999)
     Console.WriteLine("Введено некоректное число");
 else
 {   int frstDgt = fiveDigit / 10000;
